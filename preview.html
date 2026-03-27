@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Rheza Jonathan | Video Editor, SEO Writer & Content Strategist</title>
+  <meta name="description" content="Rheza Jonathan is a video editor, SEO writer, and content strategist helping creators, startups, and brands produce high-retention content that converts." />
+  <meta name="keywords" content="Video Editor Uganda, SEO Writer Uganda, Content Strategist, YouTube Editor, Short Form Video Editor, Freelance Writer, Content Management" />
+  <meta name="author" content="Rheza Jonathan" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rheza Jonathan | Video Editor, SEO Writer & Content Strategist" />
+  <meta property="og:description" content="High-retention video editing, SEO content writing, and content systems for creators, brands, and growing businesses." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="profile.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rheza Jonathan | Video Editor, SEO Writer & Content Strategist" />
+  <meta name="twitter:description" content="Video editing, SEO writing, and content strategy for creators and businesses." />
+  <meta name="twitter:image" content="profile.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+
+    :root{
+      --ink:#0e0d0b;
+      --ink-mid:#4a4843;
+      --ink-soft:#8a8780;
+      --ink-faint:#c8c5bc;
+      --cream:#f5f2ea;
+      --cream-dark:#ece8dd;
+      --night:#111009;
+      --night-mid:#1c1b17;
+      --gold:#c9903a;
+      --gold-pale:#f0d9b0;
+      --serif:'Cormorant Garamond',Georgia,serif;
+      --sans:'Syne',sans-serif;
+      --border:rgba(14,13,11,0.1);
+    }
+
+    html{scroll-behavior:smooth;}
+
+    body{
+      background:var(--cream);
+      color:var(--ink);
+      font-family:var(--sans);
+      font-size:16px;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    /* ── NAV ── */
+    nav{
+      position:fixed;top:0;left:0;right:0;z-index:100;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:1.1rem 4rem;
+      background:rgba(245,242,234,0.88);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--border);
+    }
+    .nav-logo{
+      font-family:var(--serif);
+      font-size:1.25rem;
+      letter-spacing:0.04em;
+      color:var(--ink);
+      text-decoration:none;
+    }
+    .nav-logo span{color:var(--gold);font-style:italic;}
+    .nav-links{display:flex;gap:2rem;list-style:none;}
+    .nav-links a{
+      font-size:0.72rem;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:var(--ink-soft);
+      text-decoration:none;
+      transition:color 0.2s;
+    }
+    .nav-links a:hover{color:var(--gold);}
+
+    /* ── LABEL ── */
+    .label{
+      display:inline-flex;align-items:center;gap:0.6rem;
+      font-size:0.68rem;
+      letter-spacing:0.2em;
+      text-transform:uppercase;
+      color:var(--gold);
+      font-weight:600;
+      margin-bottom:1.2rem;
+    }
+    .label::before{content:'';width:24px;height:1px;background:var(--gold);}
+    hr.rule{border:none;border-top:1px solid var(--border);margin:0;}
+
+    /* HERO */
+    #hero{
+      min-height:100vh;
+      display:flex;flex-direction:column;justify-content:flex-end;
+      padding:8rem 4rem 5rem;
+      position:relative;
+      overflow:hidden;
+      border-bottom:1px solid var(--border);
+    }
+    .hero-bg{
+      position:absolute;inset:0;
+      background:
+        radial-gradient(ellipse 55% 60% at 80% 30%, var(--cream-dark) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 10% 80%, rgba(201,144,58,0.08) 0%, transparent 65%);
+      pointer-events:none;
+    }
+    .hero-location{
+      font-size:0.72rem;
+      letter-spacing:0.2em;
+      text-transform:uppercase;
+      color:var(--ink-soft);
+      margin-bottom:2rem;
+      display:flex;align-items:center;gap:0.6rem;
+      animation:fadeUp 0.6s ease both 0.1s;
+    }
+    .hero-location::before{
+      content:'';width:8px;height:8px;border-radius:50%;
+      background:var(--gold);flex-shrink:0;
+    }
+    .hero-headline{
+      font-family:var(--serif);
+      font-size:clamp(3rem,7.5vw,7rem);
+      line-height:1.0;
+      letter-spacing:-0.02em;
+      font-weight:600;
+      max-width:860px;
+      margin-bottom:2.5rem;
+      animation:fadeUp 0.7s ease both 0.25s;
+    }
+    .hero-headline .italic{font-style:italic;color:var(--gold);}
+    .hero-sub{
+      font-size:clamp(0.95rem,1.6vw,1.1rem);
+      color:var(--ink-mid);
+      max-width:580px;
+      line-height:1.8;
+      margin-bottom:3rem;
+      animation:fadeUp 0.7s ease both 0.4s;
+    }
+    .hero-actions{
+      display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;
+      animation:fadeUp 0.7s ease both 0.55s;
+    }
+    .btn-primary{
+      display:inline-block;
+      background:var(--ink);color:var(--cream);
+      text-decoration:none;
+      font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;
+      padding:1rem 2.2rem;border-radius:2px;
+      transition:background 0.2s,transform 0.15s;
+    }
+    .btn-primary:hover{background:var(--gold);transform:translateY(-2px);}
+    .btn-ghost{
+      font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;
+      color:var(--ink-mid);text-decoration:none;font-weight:600;
+      border-bottom:1px solid var(--ink-faint);padding-bottom:2px;
+      transition:color 0.2s,border-color 0.2s;
+    }
+    .btn-ghost:hover{color:var(--gold);border-color:var(--gold);}
+    .hero-scroll{
+      position:absolute;bottom:2.5rem;right:4rem;
+      font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;
+      color:var(--ink-soft);
+      display:flex;flex-direction:column;align-items:center;gap:0.5rem;
+      animation:fadeUp 0.7s ease both 0.8s;
+    }
+    .hero-scroll::after{
+      content:'';width:1px;height:48px;background:var(--ink-faint);
+    }
+
+    /* OFFER */
+    #offer{padding:7rem 4rem;}
+    .offer-intro{
+      display:grid;grid-template-columns:1fr 1fr;gap:4rem;
+      align-items:end;margin-bottom:4rem;
+    }
+    .offer-intro h2{
+      font-family:var(--serif);
+      font-size:clamp(2rem,3.5vw,3rem);
+      font-weight:600;line-height:1.2;
+    }
+    .offer-intro p{font-size:0.94rem;color:var(--ink-mid);line-height:1.85;}
+
+    .offer-cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1px;
+      background:var(--border);
+      border:1px solid var(--border);
+    }
+    .offer-card{
+      background:var(--cream);
+      padding:2.5rem 2.2rem 2.8rem;
+      transition:background 0.25s;
+      position:relative;
+    }
+    .offer-card:hover{background:var(--cream-dark);}
+    .offer-icon{
+      font-size:1.4rem;margin-bottom:1.2rem;
+      display:block;line-height:1;
+    }
+    .offer-card h3{
+      font-family:var(--serif);
+      font-size:1.4rem;font-weight:600;
+      line-height:1.25;margin-bottom:0.9rem;
+    }
+    .offer-card .tagline{
+      font-size:0.8rem;letter-spacing:0.06em;
+      color:var(--gold);font-weight:600;
+      text-transform:uppercase;margin-bottom:1rem;
+    }
+    .offer-card p{font-size:0.88rem;color:var(--ink-mid);line-height:1.85;}
+    .offer-list{
+      list-style:none;margin-top:1.2rem;
+      display:flex;flex-direction:column;gap:0.5rem;
+    }
+    .offer-list li{
+      font-size:0.84rem;color:var(--ink-mid);
+      display:flex;align-items:flex-start;gap:0.5rem;
+      line-height:1.5;
+    }
+    .offer-list li::before{
+      content:'→';color:var(--gold);
+      font-size:0.75rem;flex-shrink:0;margin-top:2px;
+    }
+
+    /* WHO IT'S FOR */
+    #for{
+      background:var(--night);
+      padding:7rem 4rem;
+    }
+    #for .label{color:var(--gold-pale);}
+    #for .label::before{background:var(--gold);}
+    .for-inner{
+      display:grid;grid-template-columns:1fr 1fr;
+      gap:6rem;align-items:start;
+      max-width:1100px;margin:0 auto;
+    }
+    .for-title{
+      font-family:var(--serif);
+      font-size:clamp(2rem,3.5vw,3rem);
+      font-weight:600;line-height:1.2;
+      color:#f5f2ea;margin-bottom:0.5rem;
+    }
+    .for-title em{color:var(--gold);font-style:italic;}
+    .for-sub{font-size:0.9rem;color:rgba(245,242,234,0.45);margin-top:1rem;}
+
+    .for-list{list-style:none;margin-top:2.5rem;}
+    .for-list li{
+      display:flex;align-items:flex-start;gap:1rem;
+      padding:1.2rem 0;
+      border-bottom:1px solid rgba(245,242,234,0.08);
+      color:rgba(245,242,234,0.8);
+      font-size:0.92rem;line-height:1.6;
+    }
+    .for-list li:first-child{border-top:1px solid rgba(245,242,234,0.08);}
+    .for-check{
+      flex-shrink:0;width:18px;height:18px;border-radius:50%;
+      background:var(--gold);margin-top:2px;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .for-check::after{
+      content:'';width:6px;height:4px;
+      border-left:1.5px solid var(--night);
+      border-bottom:1.5px solid var(--night);
+      transform:rotate(-45deg) translateY(-1px);
+    }
+    .for-aside{padding-top:1rem;}
+    .for-quote{
+      font-family:var(--serif);
+      font-size:clamp(1.5rem,2.2vw,2rem);
+      font-style:italic;
+      color:rgba(245,242,234,0.55);
+      line-height:1.5;
+      padding-left:2rem;
+      border-left:2px solid var(--gold);
+      margin-bottom:3rem;
+    }
+    .not-for{
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(245,242,234,0.1);
+      border-radius:3px;
+      padding:1.5rem 1.8rem;
+    }
+    .not-for h4{
+      font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;
+      color:rgba(245,242,234,0.35);margin-bottom:1rem;font-weight:600;
+    }
+    .not-for ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem;}
+    .not-for li{
+      font-size:0.85rem;color:rgba(245,242,234,0.45);
+      display:flex;align-items:center;gap:0.7rem;
+    }
+    .not-for li::before{content:'×';color:rgba(245,242,234,0.25);font-size:1rem;}
+
+    /* ABOUT */
+    #about{padding:7rem 4rem;}
+    .about-inner{
+      display:grid;grid-template-columns:380px 1fr;
+      gap:6rem;align-items:start;
+    }
+    .about-photo{
+      aspect-ratio:4/5;
+      background:var(--cream-dark);
+      border:1px solid var(--border);
+      border-radius:2px;
+      overflow:hidden;
+      margin-bottom:2rem;
+    }
+    .about-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .tools-label{
+      font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;
+      color:var(--ink-soft);font-weight:600;margin-bottom:1rem;
+    }
+    .tools-grid{display:flex;flex-wrap:wrap;gap:0.5rem;}
+    .tool-tag{
+      font-size:0.75rem;
+      background:var(--cream-dark);
+      border:1px solid var(--border);
+      border-radius:2px;
+      padding:0.3rem 0.75rem;
+      color:var(--ink-mid);
+      letter-spacing:0.03em;
+    }
+    .about-right h2{
+      font-family:var(--serif);
+      font-size:clamp(2rem,3vw,2.8rem);
+      font-weight:600;line-height:1.2;
+      margin-bottom:1.8rem;margin-top:0.4rem;
+    }
+    .about-right h2 em{color:var(--gold);font-style:italic;}
+    .about-right p{
+      font-size:0.95rem;color:var(--ink-mid);
+      line-height:1.9;margin-bottom:1.3rem;
+    }
+    .about-links{
+      display:flex;gap:1.2rem;flex-wrap:wrap;
+      margin-top:0.5rem;margin-bottom:2.5rem;
+    }
+    .about-links a{
+      font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;
+      color:var(--gold);text-decoration:none;font-weight:600;
+      border-bottom:1px solid var(--gold-pale);padding-bottom:2px;
+      transition:border-color 0.2s;
+    }
+    .about-links a:hover{border-color:var(--gold);}
+    .about-stats{
+      display:flex;gap:3rem;padding-top:2rem;
+      border-top:1px solid var(--border);
+    }
+    .stat-val{
+      font-family:var(--serif);
+      font-size:2.2rem;font-weight:600;color:var(--gold);
+      line-height:1;margin-bottom:0.3rem;
+    }
+    .stat-label{font-size:0.72rem;color:var(--ink-soft);letter-spacing:0.06em;}
+
+    /* PORTFOLIO */
+    #portfolio{
+      padding:7rem 4rem;
+      background:var(--cream-dark);
+    }
+    .portfolio-top{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:4rem;
+      align-items:end;
+      margin-bottom:4rem;
+    }
+    .portfolio-top h2{
+      font-family:var(--serif);
+      font-size:clamp(2rem,3.5vw,3rem);
+      font-weight:600;
+      line-height:1.2;
+    }
+    .portfolio-top p{
+      font-size:0.94rem;
+      color:var(--ink-mid);
+      line-height:1.85;
+    }
+    .portfolio-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.5rem;
+    }
+    .portfolio-card{
+      background:var(--cream);
+      border:1px solid var(--border);
+      padding:2rem;
+      border-radius:2px;
+      transition:transform 0.2s, box-shadow 0.2s;
+    }
+    .portfolio-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    }
+    .portfolio-type{
+      font-size:0.7rem;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:var(--gold);
+      font-weight:600;
+      margin-bottom:1rem;
+    }
+    .portfolio-card h3{
+      font-family:var(--serif);
+      font-size:1.5rem;
+      font-weight:600;
+      line-height:1.25;
+      margin-bottom:0.8rem;
+    }
+    .portfolio-card p{
+      font-size:0.88rem;
+      color:var(--ink-mid);
+      line-height:1.8;
+      margin-bottom:1.2rem;
+    }
+    .portfolio-meta{
+      font-size:0.78rem;
+      color:var(--ink-soft);
+      margin-bottom:1.2rem;
+      line-height:1.7;
+    }
+    .portfolio-link{
+      font-size:0.75rem;
+      letter-spacing:0.1em;
+      text-transform:uppercase;
+      color:var(--gold);
+      text-decoration:none;
+      font-weight:600;
+      border-bottom:1px solid var(--gold-pale);
+      padding-bottom:2px;
+    }
+    .portfolio-link:hover{border-color:var(--gold);}
+
+    /* CONTACT */
+    #contact{
+      background:var(--night-mid);
+      padding:7rem 4rem;
+    }
+    #contact .label{color:var(--gold-pale);}
+    #contact .label::before{background:var(--gold);}
+    .contact-top{
+      display:grid;grid-template-columns:1fr 1fr;
+      gap:4rem;align-items:end;margin-bottom:4rem;
+    }
+    .contact-top h2{
+      font-family:var(--serif);
+      font-size:clamp(2rem,3.5vw,3.2rem);
+      font-weight:600;line-height:1.15;color:#f5f2ea;
+    }
+    .contact-top p{font-size:0.92rem;color:rgba(245,242,234,0.45);line-height:1.85;}
+
+    .contact-grid{
+      display:grid;grid-template-columns:1.2fr 1fr;
+      gap:5rem;align-items:start;
+    }
+
+    .contact-card{
+      background:rgba(255,255,255,0.03);
+      border:1px solid rgba(245,242,234,0.08);
+      padding:2rem;
+      border-radius:3px;
+    }
+
+    .contact-card h3{
+      font-family:var(--serif);
+      font-size:1.6rem;
+      color:#f5f2ea;
+      margin-bottom:1rem;
+    }
+    .contact-card p{
+      font-size:0.9rem;
+      color:rgba(245,242,234,0.55);
+      line-height:1.85;
+      margin-bottom:1.8rem;
+    }
+
+    .cta-stack{
+      display:flex;
+      flex-direction:column;
+      gap:1rem;
+    }
+
+    .cta-button{
+      display:inline-block;
+      text-decoration:none;
+      text-align:center;
+      padding:1rem 1.4rem;
+      border-radius:2px;
+      font-size:0.74rem;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      font-weight:600;
+      transition:transform 0.15s, background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .cta-button.primary{
+      background:var(--gold);
+      color:var(--night);
+      border:1px solid var(--gold);
+    }
+    .cta-button.primary:hover{
+      background:var(--gold-pale);
+      transform:translateY(-2px);
+    }
+
+    .cta-button.secondary{
+      background:transparent;
+      color:#f5f2ea;
+      border:1px solid rgba(245,242,234,0.15);
+    }
+    .cta-button.secondary:hover{
+      border-color:var(--gold);
+      color:var(--gold-pale);
+      transform:translateY(-2px);
+    }
+
+    .contact-aside h3{
+      font-family:var(--serif);font-size:1.3rem;font-weight:600;
+      color:#f5f2ea;margin-bottom:1.2rem;
+    }
+    .contact-aside p{
+      font-size:0.85rem;color:rgba(245,242,234,0.4);
+      line-height:1.85;margin-bottom:2rem;
+    }
+    .contact-links{display:flex;flex-direction:column;gap:0.85rem;margin-bottom:2.5rem;}
+    .contact-links a{
+      font-size:0.88rem;color:rgba(245,242,234,0.75);
+      text-decoration:none;
+      display:flex;align-items:center;gap:0.8rem;
+      transition:color 0.2s;
+    }
+    .contact-links a:hover{color:var(--gold);}
+    .c-dot{
+      width:6px;height:6px;border-radius:50%;
+      background:var(--gold);flex-shrink:0;
+    }
+    .turnaround{
+      background:rgba(201,144,58,0.1);
+      border:1px solid rgba(201,144,58,0.25);
+      border-radius:2px;
+      padding:1rem 1.2rem;
+      font-size:0.8rem;
+      color:var(--gold-pale);
+      line-height:1.6;
+    }
+    .turnaround strong{display:block;font-weight:600;margin-bottom:0.3rem;letter-spacing:0.05em;}
+
+    /* FOOTER */
+    footer{
+      background:var(--night);
+      padding:2.2rem 4rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:1rem;
+      border-top:1px solid rgba(245,242,234,0.06);
+      font-size:0.78rem;
+      color:rgba(245,242,234,0.28);
+      letter-spacing:0.05em;
+    }
+    .footer-left,.footer-right{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      flex-wrap:wrap;
+    }
+    footer a{
+      color:rgba(245,242,234,0.45);
+      text-decoration:none;
+      transition:color 0.2s;
+    }
+    footer a:hover{color:var(--gold);}
+
+    /* WHATSAPP FLOAT */
+    .whatsapp-float{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      z-index:120;
+      background:#25D366;
+      color:white;
+      text-decoration:none;
+      padding:0.95rem 1rem;
+      border-radius:999px;
+      font-size:0.78rem;
+      font-weight:600;
+      box-shadow:0 10px 25px rgba(0,0,0,0.18);
+      transition:transform 0.15s, opacity 0.2s;
+    }
+    .whatsapp-float:hover{
+      transform:translateY(-3px);
+      opacity:0.95;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(28px);}
+      to{opacity:1;transform:translateY(0);}
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      nav{padding:1rem 1.5rem;}
+      .nav-links{display:none;}
+      #hero,#offer,#about,#portfolio,#contact{padding:5rem 1.5rem;}
+      #for{padding:5rem 1.5rem;}
+      .offer-intro{grid-template-columns:1fr;gap:1.5rem;}
+      .offer-cards{grid-template-columns:1fr;}
+      .for-inner{grid-template-columns:1fr;gap:3rem;}
+      .for-quote{font-size:1.3rem;}
+      .about-inner{grid-template-columns:1fr;gap:2.5rem;}
+      .about-photo{aspect-ratio:3/2;}
+      .contact-top{grid-template-columns:1fr;gap:1.5rem;}
+      .contact-grid{grid-template-columns:1fr;gap:3rem;}
+      .about-stats{gap:2rem;flex-wrap:wrap;}
+      .portfolio-top{grid-template-columns:1fr;gap:1.5rem;}
+      .portfolio-grid{grid-template-columns:1fr;}
+      footer{flex-direction:column;align-items:flex-start;}
+      .hero-scroll{display:none;}
+      .whatsapp-float{
+        right:14px;
+        bottom:14px;
+        font-size:0.72rem;
+        padding:0.85rem 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#hero">Rheza <span>Jonathan</span></a>
+    <ul class="nav-links">
+      <li><a href="#offer">Services</a></li>
+      <li><a href="#for">Who I Help</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Work With Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <p class="hero-location">Kampala, Uganda </p>
+    <h1 class="hero-headline">
+      Premium video editing &amp;<br/>
+      content strategy<br/>
+      that <span class="italic">actually converts.</span>
+    </h1>
+    <p class="hero-sub">
+      I help creators, startups, and growing brands turn raw footage and scattered ideas into high-retention content that looks premium, performs well, and saves you time.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="https://form.jotform.com/260453829326360" target="_blank">Book a project →</a>
+      <a class="btn-ghost" href="#portfolio">See my work</a>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- OFFER -->
+  <section id="offer">
+    <div class="offer-intro">
+      <div>
+        <span class="label">What I offer</span>
+        <h2>Three ways we can work together</h2>
+      </div>
+      <p>I work across video, writing, and content systems — so you can hire one person and keep your output consistent, polished, and on-brand.</p>
+    </div>
+
+    <div class="offer-cards">
+      <div class="offer-card">
+        <span class="offer-icon">🎬</span>
+        <div class="tagline">Video Editing</div>
+        <h3>High-Retention Video & Short-Form Content</h3>
+        <p>From faceless YouTube automation to premium short-form clips — I edit for watch time, clarity, and audience retention.</p>
+        <ul class="offer-list">
+          <li>YouTube long-form: documentary, educational, finance, motivational</li>
+          <li>TikTok, Instagram Reels & YouTube Shorts</li>
+          <li>Podcast & talking-head editing with audio cleanup</li>
+          <li>Colour grading, sound design & motion graphics</li>
+          <li>Script-to-screen full production support</li>
+        </ul>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-icon">📄</span>
+        <div class="tagline">SEO Writing</div>
+        <h3>SEO Content Writing & AI-Driven Strategy</h3>
+        <p>Search-friendly content built to rank, engage, and convert — not just publish and disappear.</p>
+        <ul class="offer-list">
+          <li>Long-form blog posts, whitepapers & eBooks</li>
+          <li>Landing pages, ad copy & product descriptions</li>
+          <li>Amazon & Shopify SEO-friendly listings</li>
+          <li>Full content calendars from scratch</li>
+          <li>Article refreshes for current SEO standards</li>
+        </ul>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-icon">📘</span>
+        <div class="tagline">Content Management</div>
+        <h3>Social Media & Content Management</h3>
+        <p>Consistent voice, consistent publishing, and less content chaos across the platforms that matter.</p>
+        <ul class="offer-list">
+          <li>Editorial systems for Medium & Substack</li>
+          <li>How-to guides, blog posts & educational content</li>
+          <li>Community moderation: Reddit, Discord, YouTube, Telegram</li>
+          <li>Daily content workflows for small teams and creators</li>
+          <li>Captions, social posts & product copy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- WHO IT'S FOR -->
+  <section id="for" style="max-width:100%;padding-left:0;padding-right:0;">
+    <div class="for-inner" style="padding:0 4rem;">
+      <div>
+        <span class="label">Who this is for</span>
+        <h2 class="for-title">Made for people who are <em>serious</em> about growth.</h2>
+        <p class="for-sub">You don’t need another freelancer who disappears. You need someone who communicates clearly, delivers reliably, and understands content as a business asset.</p>
+        <ul class="for-list">
+          <li><span class="for-check"></span><span>YouTube creators who need consistent edits that hold viewers past the 30-second mark.</span></li>
+          <li><span class="for-check"></span><span>Startups and small businesses that need professional content without hiring a full-time content team.</span></li>
+          <li><span class="for-check"></span><span>Brands and coaches who want short-form content repurposed from existing long-form material.</span></li>
+          <li><span class="for-check"></span><span>Founders tired of slow freelancers — you need clear communication and dependable turnaround.</span></li>
+          <li><span class="for-check"></span><span>Businesses that want one reliable operator across video, writing, and content systems.</span></li>
+        </ul>
+      </div>
+
+      <div class="for-aside">
+        <p class="for-quote">“If any of this sounds like your situation — you’re in the right place.”</p>
+        <div class="not-for">
+          <h4>What I don’t do</h4>
+          <ul>
+            <li>Logo design or full brand identity work</li>
+            <li>Web development or backend systems</li>
+            <li>Complex 3D motion design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-left">
+        <div class="about-photo">
+          <img src="profile.jpg" alt="Rheza Jonathan" />
+        </div>
+        <div class="about-tools">
+          <p class="tools-label">Tools & platforms</p>
+          <div class="tools-grid">
+            <span class="tool-tag">Premiere Pro</span>
+            <span class="tool-tag">DaVinci Resolve</span>
+            <span class="tool-tag">After Effects</span>
+            <span class="tool-tag">CapCut</span>
+            <span class="tool-tag">Canva</span>
+            <span class="tool-tag">WordPress</span>
+            <span class="tool-tag">Notion</span>
+            <span class="tool-tag">Rank Math</span>
+            <span class="tool-tag">Yoast</span>
+            <span class="tool-tag">Google Search Console</span>
+            <span class="tool-tag">Ubersuggest</span>
+            <span class="tool-tag">Grammarly</span>
+            <span class="tool-tag">Copyscape</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <span class="label">About me</span>
+        <h2>Multidisciplinary. Remote. <em>Reliable.</em></h2>
+        <p>
+          I’m Rheza — a multidisciplinary video editor and content writer based in Kampala, Uganda. I work with creators, startups, and growing businesses that need high-quality content delivered without the usual friction.
+        </p>
+        <p>
+          My background spans both sides of content: I edit videos built for retention and write SEO-driven content designed to rank and convert. I’ve worked as a Reddit engagement assistant for <strong>Meterwork</strong> and as a freelance editor across multiple niches. I also publish through <strong>Autonomy Labs</strong>.
+        </p>
+        <p>
+          I focus on one thing: helping you ship content that looks professional, sounds intentional, and supports your growth goals — whether that means better retention, better search visibility, or more consistent publishing.
+        </p>
+        <div class="about-links">
+          <a href="https://www.linkedin.com/in/rheza-a12163b9" target="_blank">LinkedIn →</a>
+          <a href="https://substack.com/@rhezajonathan" target="_blank">Substack →</a>
+          <a href="https://form.jotform.com/260453829326360" target="_blank">Request Portfolio →</a>
+        </div>
+        <div class="about-stats">
+          <div>
+            <div class="stat-val">24–48h</div>
+            <div class="stat-label">Standard turnaround</div>
+          </div>
+          <div>
+            <div class="stat-val">3</div>
+            <div class="stat-label">Core service areas</div>
+          </div>
+          <div>
+            <div class="stat-val">100%</div>
+            <div class="stat-label">Original writing standards</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="portfolio-top">
+      <div>
+        <span class="label">Selected work</span>
+        <h2>Proof over promises.</h2>
+      </div>
+      <p>Here are examples of the type of work I can help you create — from high-retention video edits to short-form repurposing and search-friendly written content.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="portfolio-type">Video Editing</div>
+        <h3>YouTube Long-Form Edit</h3>
+        <p>Long-form creator editing with strong pacing, visual rhythm, retention-focused structure, and cleaner delivery.</p>
+        <div class="portfolio-meta">
+          Best for: educational channels, faceless content, finance, storytelling
+        </div>
+        <a class="portfolio-link" href="https://drive.google.com/drive/folders/1-76eEqQVZqGnKwWveGRsrQoVp4P8JF-b?usp=drive_link" target="_blank">View sample →</a>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-type">Short-Form Content</div>
+        <h3>Reels / Shorts Repurposing</h3>
+        <p>Short-form clips built from longer videos and optimized for hooks, captions, pacing, and replay value.</p>
+        <div class="portfolio-meta">
+          Best for: coaches, founders, creators, personal brands
+        </div>
+        <a class="portfolio-link" href="https://drive.google.com/drive/folders/1R2vWUhdhs5SaZ5goHWpi_m0JvAD8NeMX?usp=drive_link" target="_blank">View sample →</a>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-type">SEO Writing</div>
+        <h3>SEO Blog / Content Writing</h3>
+        <p>Search-optimized written content designed to rank, educate, and turn attention into subscribers or customers.</p>
+        <div class="portfolio-meta">
+          Best for: blogs, niche websites, startups, digital brands
+        </div>
+        <a class="portfolio-link" href="https://drive.google.com/drive/folders/1QCXIIgeBUujOTmRbx_rQOz1G5pq_VDyr?usp=drive_link" target="_blank">Read sample →</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- CONTACT -->
+  <section id="contact" style="max-width:100%;padding-left:0;padding-right:0;">
+    <div style="max-width:1100px;margin:0 auto;padding:0 4rem;">
+      <div class="contact-top">
+        <div>
+          <span class="label">Work with me</span>
+          <h2>Ready to create content that actually performs?</h2>
+        </div>
+        <p>I’m currently available for freelance work and creative collaborations. If you already know what you need, send an inquiry. If you’re not fully sure yet, reach out and we can figure it out quickly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Start here</h3>
+          <p>
+            The fastest way to work with me is through my project inquiry form. If you prefer something simpler, you can also email or message me directly on WhatsApp.
+          </p>
+
+          <div class="cta-stack">
+            <a class="cta-button primary" href="https://form.jotform.com/260453829326360" target="_blank">Open Project Form →</a>
+            <a class="cta-button secondary" href="mailto:snackroy@proton.me">Email Me Directly →</a>
+            <a class="cta-button secondary" href="https://wa.me/256790604337" target="_blank">Chat on WhatsApp →</a>
+          </div>
+        </div>
+
+        <div class="contact-aside">
+          <h3>Other ways to reach me</h3>
+          <p>Prefer a direct route? That works too — here are the fastest ways to contact me.</p>
+          <div class="contact-links">
+            <a href="mailto:snackroy@proton.me"><span class="c-dot"></span>snackroy@proton.me</a>
+            <a href="https://form.jotform.com/260453829326360" target="_blank"><span class="c-dot"></span>Project Inquiry Form</a>
+            <a href="https://wa.me/256790604337" target="_blank"><span class="c-dot"></span>Chat on WhatsApp</a>
+            <a href="https://www.linkedin.com/in/rheza-a12163b9" target="_blank"><span class="c-dot"></span>LinkedIn</a>
+            <a href="https://substack.com/@rhezajonathan" target="_blank"><span class="c-dot"></span>Autonomy Labs on Substack</a>
+          </div>
+          <div class="turnaround">
+            <strong>⚡ Turnaround times</strong>
+            Standard projects: 24–48 hours<br/>
+            Complex projects: 1–5 business days<br/>
+            Portfolio available on request
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <span>© 2026 Rheza Jonathan</span>
+      <span>·</span>
+      <span>Uganda</span>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:snackroy@proton.me">Email</a>
+      <a href="https://www.linkedin.com/in/rheza-a12163b9" target="_blank">LinkedIn</a>
+      <a href="https://substack.com/@rhezajonathan" target="_blank">Substack</a>
+      <a href="https://wa.me/256790604337" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a class="whatsapp-float" href="https://wa.me/256790604337" target="_blank">WhatsApp</a>
+
+</body>
+</html>
